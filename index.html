@@ -76,12 +76,12 @@
     query.count({
      success: function(number) {
       var j = number-1;
-      alert("num: " +j);
+      
        query.skip(j);
           query.first({
             success: function(results){
               var message = results.get("thought");
-              alert("got the results! " + results.get("thought"));
+              
             var myHtml = document.getElementById('myHtml');
             myHtml.innerHTML= '<h1>'+message+'</h1>';
           },
@@ -100,7 +100,7 @@
 
 
             testObject.save(null, {success: function(testObject) {
-        alert('Saved: '+ thoughtEntry);
+        
       },
       error: function(testObject, error) {
         alert('We had a problem saving the data: ' + error.message);
