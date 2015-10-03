@@ -1,0 +1,36 @@
+body {
+  padding-top: 50px;
+  background: #912CEE
+}
+
+.starter-template {
+  padding: 40px 15px;
+  text-align: center;
+}
+
+
+#custom-search-input {
+        margin:10;
+        margin-top: 100px;
+        padding: 0;
+    }
+ 
+    #custom-search-input .search-query {
+        padding-right: 3px;
+        padding-right: 4px \9;
+        padding-left: 3px;
+        padding-left: 4px \9;
+        /* IE7-8 doesn't have border-radius, so don't indent the padding */
+ 
+        margin-bottom: 0;
+        -webkit-border-radius: 8px;
+        -moz-border-radius: 8px;
+        border-radius: 8px;
+    }
+ 
+    
+ 
+    .search-query:focus + button {
+        z-index: 3;   
+    }
+
